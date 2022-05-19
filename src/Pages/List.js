@@ -34,14 +34,19 @@ function List() {
   if (loading) return <h1>loading...</h1>;
   return (
     <main className='tasks'>
-
+      <tr>
+        <td>Description</td>
+        <td>Status</td>
+        <td>Date</td>
+        <td>Priority</td>
+      </tr>
       {data[0].map((task) => 
-        <section className='sectiontasks' key={task.id}>
-          <p>{`Description: ${task.description}`}</p>
-          <h4>{`Status: ${task.status}`}</h4>
-          <h4>{`Date: ${task.date}`}</h4>
-          <h4>{`Priority: ${task.priority}`}</h4>
-        </section>
+        <tr key={task.id}>
+          <td>{task.description}</td>
+          <td>{task.status}</td>
+          <td>{task.date}</td>
+          <td>{task.priority}</td>
+        </tr>
       )}
     </main>
   );
