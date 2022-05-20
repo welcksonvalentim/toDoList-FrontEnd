@@ -6,6 +6,18 @@ export function createTask(add) {
     if(resp.status === 200) {
       return resp.data;
     } else if (resp.status === 404) {
+      alert('Not Create Task');
+    }
+  });
+  return result;
+};
+
+export function excludeTask(numberId) {
+  const objectId = {id: numberId};
+  const result = Axios.delete(API_ENDPOINT, objectId ).then((resp) => {
+    if(resp.status === 200) {
+      return resp.data;
+    } else if (resp.status === 404) {
       alert('Not Delete Task');
     }
   });

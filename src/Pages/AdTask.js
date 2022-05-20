@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { createTask } from '../Functions/Functions';
+import { useListOfTask } from '../Context/Context';
 
 function AdTask() {
 
@@ -8,9 +9,11 @@ function AdTask() {
   const handleClick = async(event) => {
     event.preventDefault();
     await createTask(add);
+/*     await setListTask(listTask); */
   };
 
-
+/*   const { listTask, setListTask } = useListOfTask();
+  useEffect(() => { setListTask(listTask) }, [listTask, setListTask]); */
 
   return (
     <main className='tasks'>
