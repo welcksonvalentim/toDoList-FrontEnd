@@ -9,12 +9,12 @@ import './App.css';
 function App() {
   return (
     <Context>
-      <section className='links-header'>
         <Header />
+      <section className='links-header'>
         <AdTask />
         <List />
-        <Footer />
       </section>
+        <Footer />
     </Context>
   );
 }

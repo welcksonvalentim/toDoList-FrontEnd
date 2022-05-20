@@ -16,7 +16,7 @@ Estilização da página desenvolvida em `Bootstrap`.
 ### Acesso ao Deploy do projeto
 
 Realizado deploy da aplicação na plataforma Heroku e disponível em:
-* https://listofcarsfrontend.herokuapp.com/cars
+* https://to-do-list-welckson.herokuapp.com/list
 
 ### Ilustração da aplicação em funcionamento
 

@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { createTask } from '../Functions/Functions';
-import { useListOfTask } from '../Context/Context';
 
 function AdTask() {
 
@@ -9,14 +8,10 @@ function AdTask() {
   const handleClick = async(event) => {
     event.preventDefault();
     await createTask(add);
-/*     await setListTask(listTask); */
   };
 
-/*   const { listTask, setListTask } = useListOfTask();
-  useEffect(() => { setListTask(listTask) }, [listTask, setListTask]); */
-
   return (
-    <main className='tasks'>
+    <main>
       <form className='addTask' onSubmit={ (event) => handleClick(event) }>
           <label htmlFor='Description'>
             <h4>Description</h4>
@@ -37,7 +32,7 @@ function AdTask() {
             />
           </label>
           <label htmlFor='button'>
-            <input type='submit' name='button' value='Add Task' required />
+            <input className='buttonAdd' type='submit' name='button' value='Add Task' required/>
           </label>
         </form>
     </main>

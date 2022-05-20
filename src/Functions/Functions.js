@@ -1,5 +1,5 @@
 import Axios from 'axios';
-const API_ENDPOINT = 'http://localhost:3005/list';
+const API_ENDPOINT = 'https://to-do-list-welckson.herokuapp.com/list';
 
 export function createTask(add) {
   const result = Axios.post(API_ENDPOINT, add).then((resp) => {

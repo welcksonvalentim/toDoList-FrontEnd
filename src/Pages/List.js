@@ -1,9 +1,8 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { useListOfTask } from '../Context/Context';
 import { excludeTask } from '../Functions/Functions';
 
-const API_ENDPOINT = 'http://localhost:3005/list';
+const API_ENDPOINT = 'https://to-do-list-welckson.herokuapp.com/list';
 
 function List() {
   const [ loading, setLoading ] = useState(true);
@@ -36,8 +35,6 @@ function List() {
   const handleClick = async(numberId) => {
     await excludeTask(numberId);
   }
-  /* const { listTask, setListTask } = useListOfTask();
-  useEffect(() => { setListTask(listTask) },  [listTask, setListTask]); */
 
   if (loading) return <h1>loading...</h1>;
   return (
