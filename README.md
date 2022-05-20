@@ -13,10 +13,17 @@ Aplicação desenvolvida com `React.js`, com gerenciamento de estado por meio de
 Aplicação recebe e trata promisses proveniente do retorno de informações do projeto `Back End`.
 Estilização da página desenvolvida em `Bootstrap`.
 
-### Acesso ao Deploy do projeto
+### Acesso ao projeto
 
-Realizado deploy da aplicação na plataforma Heroku e disponível em:
+Realizado deploy da aplicação na plataforma Surge e disponível em:
+* https://welckson_todo.surge.sh/
+
+Realizado deploy da aplicação Back End na plataforma Heroku e disponível em:
 * https://to-do-list-welckson.herokuapp.com/list
+
+Aplicação BackEnd disponível no repositório:
+* https://github.com/welcksonvalentim/toDoList-BackEnd
+
 
 ### Ilustração da aplicação em funcionamento
 
