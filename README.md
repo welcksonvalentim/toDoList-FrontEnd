@@ -48,3 +48,4 @@ Aplicação BackEnd disponível no repositório:
 * Finalizar função de excluir tarefas;
 * Desenvolver função de editar tarefas;
 * Desenvolver testes de integração;
+* Aprimorar estilização do projeto;
